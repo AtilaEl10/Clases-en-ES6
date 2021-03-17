@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <title>Desafio - Impuestos</title>
+    </head>
+    <body>
+        <div class="container p-5 m-5 bg-light">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center fw-bold">Calcular Impuestos</h3>
+                        
+                    <div class="form-group mb-3">
+                        <label class="fw-bold">Nombre: </label>
+                        <input type="text" class="form-control my-2" id="nombre">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold">Monto Bruto Anual </label>
+                        <input type="number" class="form-control my-2" id="montoBruto">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold">Deducciones </label>
+                        <input type="number" class="form-control my-2" id="deducciones">
+                    </div>
+
+                    <button class="mt-4 btn btn-info text-white" id="boton">Calcular</button>
+
+                    <div class="mt-4">
+                        <h4>El valor del impuesto es: <span class="fw-bold" id="resultado"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script type="module" src="dist/main.js"></script>
+    </body>
+</html>
